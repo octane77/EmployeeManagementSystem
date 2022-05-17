@@ -10,18 +10,18 @@ Response Format - JSON
 
 Request Method - REST(GET, POST, PATCH, DELETE)
 
-Tools Used:
+**Tools Used:**
 
-Languages: Java
+**Languages:** Java
 
-IDE: Jetbrains Intellij
+**IDE:** Jetbrains Intellij
 
-Version Control: Git, Github
+**Version Control:** Git, Github
 
-API Testing: Postman
+**API Testing:** Postman
 
-Build: Maven
+**Build:** Maven
 
-Backend Framework: SpringBoot
+**Backend Framework:** SpringBoot
 
-Database: MySQL
+**Database:** MySQL
