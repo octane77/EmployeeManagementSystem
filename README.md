@@ -5,7 +5,9 @@ An implementation of an Employee Management System using the Java programming la
 The core deliverable of this API is a menu-driven program that allows us to add, update, delete and search records of an employee working in an organization, and in future versions, a payroll system which will enable payslip generation.
 
 API Version - 1.0
+
 Response Format - JSON
+
 Request Method - REST(GET, POST, PATCH, DELETE)
 
 Tools Used:
