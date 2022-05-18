@@ -2,11 +2,15 @@ package africa.semicolon.employeemanagementsystem.controller;
 
 import africa.semicolon.employeemanagementsystem.model.Employee;
 import africa.semicolon.employeemanagementsystem.service.EmployeeService;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
-@CrossOrigin(origins = "http://localhost:3000")
+@SuppressWarnings("ALL")
+@CrossOrigin(origins = {"http://localhost:3000"})
 @RestController
 @RequestMapping("ems/api/v1")
 public class EmployeeController {
@@ -24,5 +28,20 @@ public class EmployeeController {
     @GetMapping("/fetchemployees")
     public List<Employee> fetchAllEmployees() {
         return employeeService.fetchAllEmployees();
+    }
+    @DeleteMapping("/deleteemployee/{id}")
+    public ResponseEntity<Map<String, Boolean>> deleteEmployee(@PathVariable Long id){
+        boolean deleted = false;
+        deleted = employeeService.deleteEmployee(id);
+        Map<String, Boolean> response = new HashMap<>();
+        response.put("Employee Entry Deleted Successfully", deleted);
+        return ResponseEntity.ok(response);
+    }
+
+    @GetMapping("/fetchemployeebyid/{id}")
+    public ResponseEntity<Employee> fetchEmployeeById(@PathVariable Long id) {
+        Employee employee = null;
+        employee = employeeService.fetchEmployeeById(id);
+        return null;
     }
 }

@@ -1,0 +1,3 @@
+[submodule "EmployeeManagementSystemUI"]
+	path = EmployeeManagementSystemUI
+	url = https://github.com/octane77/EmployeeManagementSystemUI
