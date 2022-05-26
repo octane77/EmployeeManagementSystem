@@ -8,7 +8,7 @@ API Version - 1.0
 
 Response Format - JSON
 
-Request Method - REST(GET, POST, PATCH, DELETE)
+Request Method - REST(GET, POST, PUT, DELETE)
 
 **Tools Used:**
 
